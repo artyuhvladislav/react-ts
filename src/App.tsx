@@ -1,9 +1,5 @@
 import { useLazyQuery } from '@apollo/client';
 import React from 'react';
-import {
-  Route,
-  Link
-} from "react-router-dom";
 import CitiesWeather from './components/CitiesWeather';
 import Navbar from './components/Navbar';
 import SearchForm from './components/SearchForm';
