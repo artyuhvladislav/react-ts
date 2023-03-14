@@ -1,0 +1,24 @@
+.nav {
+    margin-left: auto;
+    margin-right: 20px;
+
+    ul {
+        display: flex;
+
+    }
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+
+    }
+}

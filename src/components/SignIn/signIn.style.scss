@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-container {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}

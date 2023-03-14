@@ -1,0 +1,57 @@
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+
+
+    &-element {
+        position: relative;
+        min-width: calc(100% / 3 - 10px);
+        text-align: center;
+        padding: 40px 0;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:last-child {
+            width: calc(50% - 1rem);
+        }
+
+        &:nth-last-child(2) {
+            width: 50%;
+        }
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: transform 2s ease;
+        }
+
+        &:hover &__bg {
+            transform: scale(1.2);
+        }
+
+
+        &__text,
+        .text-container {
+            border: 1px solid #ccc;
+            background: rgba($color: #46464669, $alpha: .6);
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 50%;
+            color: #fff;
+
+            &__title {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

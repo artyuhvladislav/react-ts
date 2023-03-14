@@ -1,25 +1,25 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-
-
-const client = new ApolloClient({
-  uri: "https://graphql-weather-api.herokuapp.com/",
-  cache: new InMemoryCache(),
-});
+import React, { lazy, Suspense } from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import RootContainer from './containers/rootContainer/RootContainer';
+import MyApp from './MyApp';
 
 ReactDOM.render(
   <React.StrictMode>
-
-      <ApolloProvider client={client}>
-        <App />
-      </ApolloProvider>
- 
+    {/* <App /> */}
+    <MyApp />
+    {/* <Router>
+      <Suspense fallback={<div>loading...</div>}>
+        <Routes>
+          <Route path="/" element={<App />} />
+        </Routes>
+      </Suspense>
+    </Router> */}
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
