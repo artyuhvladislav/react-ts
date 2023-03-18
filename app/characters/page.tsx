@@ -15,8 +15,8 @@ const CharactersPage = async (props: any) => {
 
   const { characters, pageCount } = await fetchCharacters(page, searchString);
   return (
-    <div className="py-[24px] pb-[32px] px-[24px] pb-[130px]">
-      <h2 className="mb-[24px] text-2xl font-title tracking-widest text-[var(--accent-color)] font-medium">
+    <div className="pt-[24px] px-[24px] pb-[110px]">
+      <h2 className="text-center mb-[24px] text-2xl font-title tracking-widest text-[var(--accent-color)] font-medium">
         Characters
       </h2>
       <SearchInput />

@@ -20,16 +20,11 @@ const SearchInput = () => {
     [searchParams],
   );
   const handleInput = ({ target }: any) => {
-;
-    router.push(
-      pathname +
-        '?' +
-        createQueryString('name', target.value),
-    );
+    router.push(pathname + '?' + createQueryString('name', target.value));
   };
 
   return (
-    <div className="relative text-white focus-within:text-white">
+    <div className="container relative text-white focus-within:text-white w-8/12">
       <span className="absolute inset-y-0 left-0 flex items-center pl-2">
         <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
           <svg

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Home = async () => {
   return (
     <div className="px-5 pt-[32px] pb-[130px]">

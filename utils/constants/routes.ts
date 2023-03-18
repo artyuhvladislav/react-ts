@@ -1,5 +1,5 @@
 export const ROUTES = {
-    main: '',
+    main: '/',
     characters: '/characters',
     location: '/location',
     episode: '/episode'
