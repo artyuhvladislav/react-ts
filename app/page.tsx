@@ -7,11 +7,11 @@ const Home = async () => {
       <div className="flex flex-col">
         <p className="text-[var(--accent-color)] text-lg font-text mb-[16px]">
           Rick and Morty is an American adult animated science-fiction sitcom created by Justin
-          Roiland and Dan Harmon for Cartoon Network's nighttime programming block Adult Swim.
+          Roiland and Dan Harmon for Cartoon Network nighttime programming block Adult Swim.
         </p>
         <p className="text-[var(--accent-color)] text-lg font-text">
           Rick and Morty is an American adult animated science-fiction sitcom created by Justin
-          Roiland and Dan Harmon for Cartoon Network's nighttime programming block Adult Swim.
+          Roiland and Dan Harmon for Cartoon Network nighttime programming block Adult Swim.
         </p>
         <img src="/images/home.png" alt="rick and Morty" className="w-8/12 container" />
       </div>
